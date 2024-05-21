@@ -1,0 +1,85 @@
+:root {
+    --visitor-sidebar-width: 145px; /* Define a variable at the root level */
+    --visitor-sidebar-width-mobile: 0px;
+  }
+
+.visitor-nav-link-bg{
+    background-color: #3f3e5d;
+    color: white;
+  }
+  .visitor-nav-sidebar{
+    width: var(--visitor-sidebar-width) !important;
+  }
+  
+  .visitor-nav-sidebar #kt_app_sidebar_menu_wrapper{
+    width: var(--visitor-sidebar-width) !important;
+  }
+
+
+  .visitor-app-header{
+    left: calc(var(--visitor-sidebar-width) + var(--bs-app-sidebar-gap-start, 0px) + var(--bs-app-sidebar-gap-end, 0px)) !important;
+    height: 62px !important;
+  }
+  .visitor-kt-app-wrapper{
+    margin-left: calc(var(--visitor-sidebar-width) + var(--bs-app-sidebar-gap-start, 0px) + var(--bs-app-sidebar-gap-end, 0px)) !important;
+  }
+
+  @media (max-width: 768px) {
+    .visitor-app-header{
+      left: calc(var(--visitor-sidebar-width-mobile) + var(--bs-app-sidebar-gap-start, 0px) + var(--bs-app-sidebar-gap-end, 0px)) !important;
+      height: 62px !important;
+    }
+    .visitor-kt-app-wrapper{
+      margin-left: calc(var(--visitor-sidebar-width-mobile) + var(--bs-app-sidebar-gap-start, 0px) + var(--bs-app-sidebar-gap-end, 0px)) !important;
+    }
+  }
+
+
+  .visitor-pos-categories{
+    max-height: 500px;
+    overflow-y: auto;
+  }
+
+  .visitor-label-group {
+    position: absolute;
+    top: 0.6rem;
+    left: 0.6rem;
+  }
+  
+  .visitor-label-group .visitor-label-hot {
+    background-color: #2ba968;
+  }
+  .visitor-label-group .visitor-label-sale {
+    background-color: #da5555;
+  }
+  .visitor-label-group .visitor-product-label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    padding: 5px 11px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 1;
+    border-radius: 12px;
+  }
+  .visitor-mt-n30{
+    margin-top: -6rem !important;
+  }
+
+  /* CollapsibleForm.css */
+.visitor-collapsible-form {
+  transition: transform 0.5s ease-in-out; /* Transition with transform */
+}
+
+.visitor-collapsible-form.collapsed {
+  transform: scaleY(0); /* Collapsed state */
+  transform-origin: top; /* Collapse from top */
+  height: 0px;
+}
+
+.visitor-collapsible-form.expanded {
+  transform: scaleY(1); /* Expanded state */
+}
+

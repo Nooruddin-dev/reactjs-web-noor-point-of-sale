@@ -1,0 +1,215 @@
+.pos-category-outline {
+  border: 1px dashed #dbdfe9;
+  border-radius: 0.625rem;
+  padding: 12px 5px;
+}
+.pos-label-group {
+  position: absolute;
+  top: 2.3rem;
+  left: 2.2rem;
+}
+
+.pos-label-group .pos-label-hot {
+  background-color: #2ba968;
+}
+.pos-label-group .pos-label-sale {
+  background-color: #da5555;
+}
+.pos-label-group .pos-product-label {
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  padding: 5px 11px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1;
+  border-radius: 12px;
+}
+.pos-categories-area {
+  max-width: 850px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.pos-categories-area ul li {
+  display: inline-block !important;
+  margin-right: 10px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .pos-label-group {
+    /* Add your mobile-specific styles here */
+    top: 2.5rem;
+    left: 2.5rem;
+  }
+}
+
+.ReactModal__Overlay {
+  z-index: 10000;
+  background-color: #0000007f !important;
+}
+
+.ReactModal__Content.cashier-large-modal {
+  border: 0 !important;
+  width: 68% !important;
+  height: auto !important;
+  padding: 0 !important;
+  outline: none !important;
+  left: auto !important;
+  top: 10% !important;
+  position: relative;
+  margin: 0 auto;
+  background: white;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .ReactModal__Content.cashier-large-modal {
+    width: 90% !important;
+  }
+}
+
+.ReactModal__Content.cashier-extra-large-modal {
+  border: 0 !important;
+  width: 88% !important;
+  height: auto !important;
+  padding: 0 !important;
+  outline: none !important;
+  left: auto !important;
+  top: 10% !important;
+  position: relative;
+  margin: 0 auto;
+  background: white;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .ReactModal__Content.cashier-extra-large-modal {
+    width: 90% !important;
+  }
+}
+
+.ReactModal__Content.cashier-medium-modal {
+  border: 0 !important;
+  width: 50% !important;
+  height: auto !important;
+  padding: 0 !important;
+  outline: none !important;
+  left: auto !important;
+  top: 10% !important;
+  position: relative;
+  margin: 0 auto;
+  background: white;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .ReactModal__Content.cashier-medium-modal {
+    width: 90% !important;
+  }
+}
+
+.ReactModal__Content.cashier-small-modal {
+  border: 0 !important;
+  width: 35% !important;
+  height: auto !important;
+  padding: 0 !important;
+  outline: none !important;
+  left: auto !important;
+  top: 10% !important;
+  position: relative;
+  margin: 0 auto;
+  background: white;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .ReactModal__Content.cashier-small-modal {
+    width: 90% !important;
+  }
+}
+.cashier-modal-area {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 15px;
+}
+.cashier-modal-area .cashier-modal-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f1f1f4;
+  padding-bottom: 10px;
+}
+
+.cashier-modal-area .cashier-modal-footer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #f1f1f4;
+  padding-top: 10px;
+}
+.cashier-image-slider {
+  margin-top: 10px;
+}
+
+.cashier-image-slider .carousel-control-prev,
+.cashier-image-slider .carousel-control-next {
+  width: 5%;
+}
+
+.cashier-image-slider .carousel-inner img {
+  cursor: pointer;
+}
+.cashier-image-slider{
+  height: 27%;
+}
+.cashier-main-image{
+  height: 70%;
+}
+.cashier-btn-add-cart{
+  border: 1px solid greenyellow !important;
+}
+.cashier-select-modal-product{
+  border: 2px dashed #dbdfe9;
+  border-radius: 3px;
+}
+.cashier-nowrap {
+  white-space: nowrap;
+}
+
+.cashier-modal-height{
+  max-height: 550px;
+  overflow: auto;
+}
+.cashier-old-price{
+  position: relative;
+  color: #a7a7a7;
+  vertical-align: middle;
+  text-decoration: line-through;
+	letter-spacing: 0.005em;
+	margin-right: 10px;
+}
+
+
+
+.placeholder-date-search {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  color: #999; /* Placeholder color */
+  pointer-events: none; /* Make the label non-interactive */
+  background: #f9f9f9;
+  z-index: 9999;
+  width: 70%;
+  padding:2px 5px;
+  text-align: left;
+  transform: translateY(-50%);
+  pointer-events: none; /* Make the label non-interactive */
+}
+
+
+.Toastify__toast-container {
+  z-index: 200000 !important;
+}

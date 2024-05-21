@@ -1,0 +1,27 @@
+.home-page-main-cover{
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../../../../../public/media/logos/page-bg.jpg');
+}
+
+.header-bg{
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-image:url('../../../../../public/media/logos/header-bg.png');
+    /* background-image:url(../media/misc/header-bg.png) */
+}
+.text-white-home-page{
+    color:white;
+}
+
+.custom-modal-height{
+    max-height: 500px;
+    overflow: auto;
+  }
+
+  
+.Toastify__toast-container {
+    z-index: 200000 !important;
+}
